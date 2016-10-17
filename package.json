@@ -1,46 +1,28 @@
 {
-  "devDependencies": {
-    "@alrra/travis-scripts": "^1.1.1",
-    "apache-server-configs": "2.14.0",
-    "archiver": "^0.21.0",
-    "del": "^2.0.2",
-    "glob": "^6.0.1",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-header": "^1.2.2",
-    "gulp-jscs": "^3.0.1",
-    "gulp-jshint": "^2.0.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-replace": "^0.5.3",
-    "jquery": "1.12.0",
-    "jshint": "^2.8.0",
-    "jshint-stylish": "^2.0.1",
-    "mocha": "^2.2.4",
-    "normalize.css": "3.0.3",
-    "run-sequence": "^1.0.2"
+  "name": "caycay-frontend",
+  "version": "0.0.1",
+  "description": "web page Caycay",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscarcp777/caycay.git"
   },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "h5bp-configs": {
-    "directories": {
-      "archive": "archive",
-      "dist": "dist",
-      "src": "src",
-      "test": "test"
-    }
-  },
-  "homepage": "https://html5boilerplate.com/",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
-  },
-  "name": "html5-boilerplate",
-  "private": true,
+  "main": "index.js",
   "scripts": {
-    "build": "gulp build",
-    "test": "gulp archive && mocha --reporter spec --timeout 5000"
+    "test": "echo \"Error: no test specified\"",
+    "start": "node ./index.js",
+    "start-dev": "nodemon ./index.js",
+    "debug": "nodemon --debug=5005 ./index.js",
+    "postinstall": "bower install",
+    "prestart": "npm install"
   },
-  "version": "5.3.0"
+  "author": {
+    "name": "Oscar Cáceres",
+    "email": "caceres.oscar7@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/oscarcp777/caycay",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.13.1"
+  }
 }

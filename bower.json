@@ -1,0 +1,15 @@
+{
+  "name": "caycay-frontend",
+  "description": "Frontend Caycay",
+  "version": "0.0.1",
+  "homepage": "https://www.fondomollepata.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.5",
+    "angular-resource": "~1.5.5"
+  },
+  "resolutions": {
+    "angular": "~1.5.6"
+  }
+}
